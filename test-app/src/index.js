@@ -1,14 +1,16 @@
 import ReactDom from 'react-dom'
 import './index.css'
-import Head from './Heading'
-import Content from './Content'
-import Footer from './Footer'
+import course,{fees, text} from './App.js'
 ReactDom.render(
     <>
     <h1>React</h1>
-    <Head/>
-    <Content/>
-    <Footer/>
+    <ul>
+        <li>Angular</li>
+        <li>Mongo DB</li>
+        <li>{course}</li>
+        <li>{fees}</li>
+        <li>{text()}</li>
+    </ul>
     </>,
     document.getElementById("root")
 )
