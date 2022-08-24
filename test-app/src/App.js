@@ -1,8 +1,5 @@
-const course = 'ReactJS'
-const fees= 5000
-function text(){
-    var name ="Manasi"
-    return name
+function App(a,b){
+    let sum = a+b
+    return sum
 }
-export default course
-export {fees,text}
+export default App
