@@ -1,14 +1,14 @@
+import React  from 'react'
 import ReactDom from 'react-dom'
 import './index.css'
-import App from './App'
+class Test extends React.Component{
+    render(){
+        return <h2>Class Component</h2>
+    }
+}
 ReactDom.render(
     <>
-        <h1>React</h1>
-        <ul>
-            <li>Angular</li>
-            <li>Mongo DB</li>
-        </ul>
-        <App name = "Manasi"/>
+    <Test/>
     </>,
     document.getElementById("root")
 )
