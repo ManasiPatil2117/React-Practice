@@ -4,7 +4,7 @@ import './index.css'
 import Test from './App'
 ReactDom.render(
     <>
-    <Test/>
+    <Test name="Manasi"/>
     </>,
     document.getElementById("root")
 )
