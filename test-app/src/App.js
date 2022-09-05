@@ -1,6 +1,12 @@
-import React from "react"
-class Test extends React.Component{
-    render(){
-        return <h2>Class Component {this.props.name}</h2>
-    }
-}export default Test
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+function App() {
+    return(
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<div>Message</div>}></Route>
+            <Route path='/about' element={<div>About us</div>}></Route>
+    </Routes>
+    </BrowserRouter >
+    )
+}
+export default App

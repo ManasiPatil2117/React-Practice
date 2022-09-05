@@ -1,10 +1,11 @@
 import React  from 'react'
 import ReactDom from 'react-dom'
 import './index.css'
-import Test from './App'
+import App from './App'
 ReactDom.render(
     <>
-    <Test name="Manasi"/>
+    <App/>
+    
     </>,
     document.getElementById("root")
 )
