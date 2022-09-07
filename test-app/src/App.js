@@ -1,23 +1,11 @@
-import React from "react"
-class App extends React.Component{
-    state = {
-        name : "Rahul",
-        place : "India"
-    }
-
-    changeName=()=>{
-        this.setState({
-            name:"Manasi"
-        })
-    }
-    render(){
-        return (
-            <>
-            <h1>Hello {this.state.name}</h1>
-            <h3>Place is {this.state.place}</h3>
-            <button onClick={this.changeName}>click</button>
-            </>
-        )
-    }
+import React, {useState} from 'react'
+function App(){
+    const [data,setData] = useState(20)
+    return(
+        <>
+            <h1>Hello {data}</h1>
+            <button onClick={()=>setData("50")}>Click me</button>
+        </>
+    )
 }
 export default App
